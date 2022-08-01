@@ -1,0 +1,812 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+}
+
+
+/********************************************** Incio Header *************************************/
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-black-container, .nav-purple-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/************** Incio .headerr-black-container  **************/
+
+.header-black-container {
+    background-color: black;
+    height: auto;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+.logo-container {
+    margin-left: 1rem;
+}
+
+.logo {
+    width: 120px;
+}
+
+
+.login-carrito {
+    display: flex;
+    margin-right: 1rem;
+    font-size: 1rem;
+    gap: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.login-carrito span{
+   font-size: 1rem;
+}
+
+.login-carrito  i {
+    font-size: 1.5rem;
+}
+
+.login a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+/************** Fin .header-black-container  **************/
+
+/************** Inicio .nav-purple-container **************/
+
+.nav-purple-container {
+    background-color: #260f96;
+    height: auto;
+    padding: 0.4rem;
+}
+
+.secciones {
+    margin: 0.5rem;
+    margin: 0 auto;
+}
+
+.secciones ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    font-weight: bold;
+}
+
+.buscador {
+    font-size: 1.5rem;
+    margin-right: .9rem;
+}
+
+i {
+    color: white;
+}
+
+/************** Fin .nav-purple-container **************/
+
+/********************************************** Fin Header *************************************/
+
+/********************************************** Inicio Main *************************************/
+
+main {
+    min-height: 10vh;
+}
+
+/************** Inicio Carrousel **************/
+
+.carrousel img {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+}
+
+/************** Fin Carrousel **************/
+
+/************** Inicio Informacion Index **************/
+
+.info-container {
+    background-color: #292926;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.info {
+    display: flex;
+    gap: 1em;
+}
+
+.info__desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+}
+
+.info__fa {
+    padding: 1rem;
+    display: flex;
+}
+
+.info__fa i {
+    font-size: 4rem;
+}
+
+
+/************** Fin Informacion Index **************/
+
+/************** Inicio Container **************/
+
+.main-container {
+    width: 100%;
+}
+
+/**** Inicio Encabezado Seccion ****/
+
+.encabezado-container {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin: 20px 0 20px 0;
+}
+
+.titulo-seccion {
+    background-color: #260f96;
+    border-radius: 20px;
+    width: 120px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.linea-titulo {
+    width: 80%;
+    background-color: black;
+    height: 0.5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+/**** Fin Encabezado Seccion ****/
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+/**** Inicio Card ****/
+
+.card {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 250px;
+}
+
+
+.card-img img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.card-descripcion {
+    width: 100%;
+    background-color: gray;
+    text-align: center;
+    line-height: 2rem;
+    padding: 1rem;
+    border-radius: 0 0 10px 10px;
+}
+
+
+.card-titulo {
+    color: #260f96;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.card-precio {
+    font-weight: bold;
+}
+
+.card-cuotas {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.card-cuotas span {
+    color: #260f96;
+}
+
+/**** Inicio Card ****/
+
+/************** Fin Main Container **************/
+
+/********************************************** Fin Main *************************************/
+
+/********************************************** Inicio Footer *************************************/
+
+/* Inicio Newsletter + Redes*/
+
+.newsletter-redes {
+    background-color: #292926;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 10px;
+}
+
+.newsletter span {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.newsletter-text {
+    border-radius: 15px;
+    border: none;
+    height: 25px;
+    width: 200px;
+    outline: 0;
+    text-align: center;
+}
+
+.newsletter-submit {
+    border-radius: 15px;
+    border: none;
+    background-color: #260f96;
+    width: 100%;
+    height: 25px;
+    color: white;
+}
+
+.redes{
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    gap: 1rem;
+}
+
+.redes i {
+    font-size: 2rem;
+}
+
+/* Fin Newsletter + Redes*/
+
+/* Inicio Footer Negro */
+
+.footer-container-black {
+    background-color: black;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    gap: 2rem;
+    line-height: 2rem;
+}
+
+.medios-de-pago img{
+    width: 40px;
+    margin: 10px;
+}
+
+.envios img {
+    width: 45px;
+    margin: 10px;
+}
+
+.envios img {
+    width: 45px;
+    margin: 10px;
+}
+
+
+.contacto ul{
+    list-style: none;
+}
+
+/* Fin Footer Negro */
+
+
+/********************************************** Fin Footer *************************************/
+
+/************************************** INICIO FAQS **************************************/
+
+.banner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    padding-left: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-faqs {
+    background-image: url(https://image.shutterstock.com/image-illustration/blue-question-mark-on-background-260nw-1174244842.jpg);
+}
+
+.titulo-banner {
+    align-items:  center;
+    font-size: 3rem;
+    color: white;
+    text-shadow:
+    0 0 1px #260f96,
+    -1px -1px 0 #260f96,  
+    1px -1px 0 #260f96,
+    -1px 1px 0 #260f96,
+    1px 1px 0 #260f96;
+    -webkit-text-fill-color: #fff;
+}
+
+.faqs-container {
+    width: 95%;
+    background-color: #292926;
+    margin: 20px auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.faqs-container details{
+    padding: 10px;
+    color: white;
+    border: 1px solid white;
+}
+
+.faqs-container p {
+    padding: 10px;
+    color: coral;
+    text-align: justify;
+    padding-left: 2rem;
+}
+
+/************************************** FIN FAQS **************************************/
+
+/************************************** INCIO HISTORIA **************************************/
+
+.banner-historia {
+    background-image: url(https://gabrielapatron.com/wp-content/uploads/2018/07/LAWGAMERS.jpg)
+}
+
+.historia-container {
+    width: 95%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.historia-container p {
+    padding: 10px;
+    font-weight: bold;
+}
+
+.historia-container h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.video-historia {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+/************************************** FIN HISTORIA **************************************/
+
+/************************************** INICIO CONTACTO **************************************/
+
+
+.banner-contacto {
+    background-image: url(https://images.bluefin-mobile.com/1534326753/desktop/pages-top/47hero-contact.jpg);
+}
+
+
+.contacto-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.form-container {
+    background-color: #363636;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 44px;
+}
+
+form {
+    gap: 1rem;
+}
+
+.form-contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-contacto form {
+    gap: 2rem;
+}
+
+textarea {
+    width: 100%;
+    color: white;
+}
+
+.form-container input {
+    color: white;
+}
+
+.text {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid white;
+    outline: 0;
+    padding: 5px;
+    background-color: #363636;
+    font-family: 'roboto';
+}
+
+input::placeholder {
+    color: white;
+}
+
+textarea::placeholder {
+    color: white;
+}
+
+.submit {
+    border: 0;
+    padding: 5px;
+    background-color: #363636;
+    font-family: 'roboto';
+    display: inherit;
+    border: 2px solid white;
+    font-size: 1rem;
+    background-color: #260f96;
+    padding: 5px 25px;
+    margin: 0 auto;
+}
+
+.mapa iframe {
+    height: 100%;
+    min-height: 350px;
+    width: 600px;
+}
+
+/************************************** FIN CONTACTO **************************************/
+
+/************************************** INICIO LOGIN **************************************/
+
+.banner-login {
+    background-image: url(https://auditbots.com/gallery/04.33AMpassb-ghcc5fbb96088384e.jpg);
+}
+
+
+.login-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.facebook-login {
+    background-color: #1977f2;
+    max-width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.facebook-login a {
+    color: white;
+    text-decoration: none;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    border-radius: 10px;
+    
+}
+
+.form-login form > input {
+    margin: 15px 0 15px 0;
+}
+
+
+.incio-sesion {
+    background-color: #260f96;
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+}
+/************************************** FIN LOGIN **************************************/
+
+/************************************** INICIO SERV. TECNICO **************************************/
+
+.banner-servicio {
+    background-image: url(https://diagnostika.com.ar/wp-content/uploads/2020/12/st.jpg);
+}
+
+.info-container-titulo {
+    width: 100%;
+    background-color: #292926;
+    text-align: center;
+    color: white;   
+    padding-top: 10px;
+}
+
+.presupuesto {
+    background-color: black;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.presupuesto a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    top: 10px;
+}
+
+.service-grid-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "consolas joystick"
+    "form form";
+    justify-items: center;
+}
+
+.service-container {
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    color: white;
+    margin-top: 2rem;
+  
+}
+
+.service-container h3 {
+    font-size: 2rem;
+}
+
+.consolas {
+    grid-area: consolas;
+}
+
+.joystick {
+    grid-area: joystick;
+}
+
+.consolas-background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/reparacionconsola.jpg);
+    background-size: cover;
+}
+
+.joystick-background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/reparacionjoystick.jpg);
+    background-size: cover;
+}
+
+.service-container ul li {
+    padding-top: 20px;
+    list-style: none;
+}
+
+.form-servicio {
+    border-radius: 10px;
+    width: 50%;
+}
+
+.form-servicio  * {
+    margin-bottom: 1rem;
+}
+
+.form-grid {
+    grid-area: form;
+}
+
+
+/************************************** INICIO SERV. TECNICO **************************************/
+
+
+
+
+/************************************** INICIO Media queries **************************************/
+
+@media (max-width: 576px) {
+    .secciones ul, .nav-purple-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .secciones {
+        margin: 0.5rem 0 1rem 0;
+    }
+
+    .carrousel img {
+        height: 10rem;
+    }
+
+    .info-container {
+        flex-direction: column;
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: center;
+        padding: .5rem;
+    }
+
+    .info p{
+        padding: .5rem;
+    }
+
+    .info__fa i {
+        font-size: 3rem;
+    }
+
+    .encabezado-container {
+        padding: 0 1.5rem;
+    }
+
+    .card {
+        min-width: 260px;
+        margin: 1rem 0;
+    }
+
+    .card-precio {
+        padding: 0.8rem;
+        font-size: 1.4rem;
+    }
+
+    .card-cuotas {
+        font-size: 0.9rem;
+    }
+
+    .newsletter {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .newsletter-redes {
+        flex-direction: column;
+    }
+
+    .redes{
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .banner {
+        height: 5rem;
+    }
+
+    .banner h1 {
+        font-size: 1.5rem;
+    }
+
+    .contacto-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-container {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .form-login{
+        width: 80%;
+    }
+
+    .service-grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "consolas"
+        "joystick"
+        "form";
+    }
+
+    .form-servicio {
+        width: 80%;
+    }    
+
+    .mapa iframe {
+        width: 100%;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .footer-container-black {
+        flex-direction: column;
+    }
+    .card {
+        min-width: 330px;
+    }
+
+    .mapa iframe {
+        width: 100%;
+    }
+
+    .info {
+        gap: 0;
+    }
+
+    .info__fa i {
+        font-size: 2.5rem;
+    }
+
+    .info__desc {
+        font-size: 0.7rem;
+    }
+}
+
+
+/************************************** FIN Media queries **************************************/
