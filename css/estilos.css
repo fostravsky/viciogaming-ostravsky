@@ -9,7 +9,10 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
+    
 }
 
 
@@ -93,6 +96,11 @@ a {
     font-weight: bold;
 }
 
+.secciones ul li a:hover {
+    padding-bottom: 4px;
+    border-bottom: 3px solid white;   
+}
+
 .buscador {
     font-size: 1.5rem;
     margin-right: .9rem;
@@ -107,10 +115,6 @@ i {
 /********************************************** Fin Header *************************************/
 
 /********************************************** Inicio Main *************************************/
-
-main {
-    min-height: 10vh;
-}
 
 /************** Inicio Carrousel **************/
 
@@ -223,6 +227,11 @@ main {
     border-radius: 10px 10px 0px 0px;
 }
 
+.card:hover {
+    transform: scale(1.1,1.1);   
+    transition-duration: .8s;     
+}
+
 .card-descripcion {
     width: 100%;
     background-color: gray;
@@ -259,7 +268,11 @@ main {
 /********************************************** Fin Main *************************************/
 
 /********************************************** Inicio Footer *************************************/
+footer {
+    margin-top: auto;
+    width: 100%;
 
+}
 /* Inicio Newsletter + Redes*/
 
 .newsletter-redes {
@@ -314,6 +327,30 @@ main {
 
 .redes i {
     font-size: 2rem;
+}
+
+.redes i:hover {
+    transform: scale(1.20,1.20); 
+    transition-duration: .8s;
+}
+
+.fa-facebook-square:hover {
+    color: #3b5998;
+}
+
+.fa-youtube:hover { 
+    color: #c4302b;
+}
+
+.fa-twitter:hover {
+    color: #00acee;
+}
+
+
+.fa-instagram:hover {
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Fin Newsletter + Redes*/
