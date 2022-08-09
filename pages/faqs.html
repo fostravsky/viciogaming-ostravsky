@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../images/favicon/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Vicio Gaming</title>
 </head>
 <body >
-    <header>  <!-- Inicio Header -->
-        <div class="header-black-container"> 
-            <div class="logo-container"> <!-- Inicio Logo -->
-                <a href="../index.html">
-                    <img class="logo" src="../images/logo/logo.png" alt="Vicio Gaming">
-                </a>
-            </div> <!-- Fin Logo -->
-            <div class="login-carrito"> <!-- Inicio Login + carrito -->
+    <header class="d-flex flex-column">  <!-- Inicio Header -->
+        <div class="header--black container-fluid d-flex justify-content-between"> 
+            <!-- Inicio Logo -->
+            <a href="../index.html">
+                <img class="logo" src="../images/logo/logo.png" alt="Vicio Gaming">
+            </a>
+            <!-- Fin Logo -->
+            <div class="login-carrito d-flex align-items-center"> <!-- Inicio Login + carrito -->
                 <div class="login"> <!-- Inicio Login -->
                     <a href="./login.html">
                         <i class="fa-solid fa-user"></i>
@@ -29,92 +30,176 @@
                 </div> <!-- Fin Carrito de compras -->
             </div> <!-- Fin Login + carrito -->
         </div>
-        <nav class="nav-purple-container">
-            <div class="secciones"> <!-- Inicio Secciones -->
-                <ul>
-                    <li>
-                        <a href="../index.html">INICIO</a>
-                    </li>
-                    <li>
-                        <a href="./juegos.html">JUEGOS</a>
-                    </li>
-                    <li>
-                        <a href="./consolas.html">CONSOLAS</a>
-                    </li>
-                    <li>
-                        <a href="./accesorios.html">ACCESORIOS</a>
-                    </li>
-                    <li>
-                        <a href="./serviciotecnico.html">SERVICIO TECNICO</a>
-                    </li>
-                    <li>
-                        <a href="./contacto.html">CONTACTO</a>
-                    </li>   
-                    <li>
-                        <a href="#">FAQS</a>
-                    </li>
-                </ul>
-            </div> <!-- Fin Secciones -->
-            <div class="buscador"> <!-- Inicio Buscador -->
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div> <!-- Inicio Buscador -->
+        <nav class="nav-purple-container container-fluid navbar navbar-expand-sm">
+            <div class="secciones container-fluid justify-content-end"> <!-- Inicio Secciones -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./juegos.html">JUEGOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./consolas.html">CONSOLAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./accesorios.html">ACCESORIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./serviciotecnico.html">SERVICIO TECNICO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                        </li>   
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>  <!-- Fin Secciones -->
         </nav>
     </header> <!-- Fin Header -->
     <main>
-        <div class="banner banner-faqs">
+        <div class="banner banner-faqs container-fluid d-flex align-items-center">
             <h1 class="titulo-banner">FAQs</h1>
         </div>
-        <div class="faqs-container">
-            <details>
-                <summary>¿Como hago mi compra online?</summary>
-                <p>Lo podés hacer por el sistema de Mercado Pago. Esto incluye tarjeta de débito, crédito, PagoFácil entre otros.</p>
-            </details>
-            <details>
-                <summary>¿Cómo la recibo?</summary>
-                <p>Podés comprarla con envío a través de OCA, con envio en moto o retirando por nuestro local.</p>
-            </details>
-            <details>
-                <summary>¿Cuánto tarda el envío?</summary>
-                <p>En las páginas de los productos hay un casillero donde podés averiguar los tiempos y costos de envío ingresando tu código postal. También está disponible en el Carrito de compras.</p>
-            </details>
-            <details>
-                <summary>¿Cómo sé cuándo lo voy a recibir?</summary>
-                <p>Luego de realizar tu compra te va a llegar un mail con tu código de seguimiento para que pongas en la web de Paquetería E-Commerce de OCA. Si no te llega, ¡comunicate con nosotros!</p>
-            </details>
-            <details>
-                <summary>¿Hacen envíos en el día?</summary>
-                <p>Tenemos la opción de envío por moto dentro de AMBA. Esta opción tiene un tiempo de entrega de hasta 48 hs hábiles. Si tenés alguna restricción de horarios te pedimos que lo aclares en las notas de la compra.</p>
-            </details>
-            <details>
-                <summary>Quiero cambiar el método de envío o puse algún dato equivocado</summary>
-                <p>Si tu envío todavía no se despachó, podés comunicarte con nosotros a viciogaming@gmail.com o por WhatsApp y lo cambiamos.</p>
-            </details>
-            <details>
-                <summary>Ya hice una compra con envío y quiero agregar otro producto.</summary>
-                <p>Si todavía no despachamos tu compra, podés realizar una nueva seleccionando la opción de “Retirar por un local.” y en las notas decirnos qué querés “Unificar mi envío con la orden” y el número de orden de la compra con envío que realizaste anteriormente.</p>
-            </details>
-            <details>
-                <summary> ¿Tienen cuotas sin interés?</summary>
-                <p>La posibilidad de financiar tu pago sin intereses depende de la promoción que tenga Mercado Pago con el banco de tu tarjeta. Podés fijarte en este link: <a href="https://www.mercadopago.com.ar/cuotas">https://www.mercadopago.com.ar/cuotas</a></p>
-            </details>
-            <details>
-                <summary>Compré o me regalaron un juego y lo quiero cambiar ¿Puedo?</summary>
-                <p>No hay problema siempre y cuando el juego todavía esté sellado.</p>
-            </details>
-            <details>
-                <summary>El producto que me llegó no es el que compré, me vino dañado o sin una pieza o pieza repetida.</summary>
-                <p>Mandanos un mail a viciogaming@gmail.com y nos encargamos de resolverlo.</p>
-            </details>
+        <div class="accordion container">
+            <div class="accordion-item">
+                <h5 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        ¿Como hago mi compra online?
+                    </button>
+                </h5>  
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Lo podés hacer por el sistema de Mercado Pago. Esto incluye tarjeta de débito, crédito, PagoFácil entre otros.</p>
+                    </div>
+                </div>
+            </div>   
+            <div class="accordion-item">
+                <h5 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        ¿Cómo la recibo?
+                    </button>
+                </h5>  
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Podés comprarla con envío a través de OCA, con envio en moto o retirando por nuestro local.</p>
+                    </div>
+                </div>
+            </div>   
+            <div class="accordion-item">
+                <h5 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                        ¿Cuánto tarda el envío?
+                    </button>
+                </h5>  
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>En las páginas de los productos hay un casillero donde podés averiguar los tiempos y costos de envío ingresando tu código postal. También está disponible en el Carrito de compras.</p>
+                    </div>
+                </div>
+            </div>   
+            <div class="accordion-item">
+                <h5 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                        ¿Cómo sé cuándo lo voy a recibir?
+                    </button>
+                </h5>  
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Luego de realizar tu compra te va a llegar un mail con tu código de seguimiento para que pongas en la web de Paquetería E-Commerce de OCA. Si no te llega, ¡comunicate con nosotros!</p>
+                    </div>
+                </div>
+            </div>   
+            <div class="accordion-item">
+                <h5 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                        ¿Hacen envíos en el día?
+                    </button>
+                </h5>  
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Tenemos la opción de envío por moto dentro de AMBA. Esta opción tiene un tiempo de entrega de hasta 48 hs hábiles. Si tenés alguna restricción de horarios te pedimos que lo aclares en las notas de la compra.</p>
+                    </div>
+                </div>
+            </div>   
+            <div class="accordion-item">
+                <h5 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsSix" aria-expanded="true" aria-controls="collapseSix">
+                        Quiero cambiar el método de envío o puse algún dato equivocado
+                    </button>
+                </h5>  
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Si tu envío todavía no se despachó, podés comunicarte con nosotros a viciogaming@gmail.com o por WhatsApp y lo cambiamos.</p>
+                    </div>
+                </div>
+            </div>   
+            <div class="accordion-item">
+                <h5 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                        Ya hice una compra con envío y quiero agregar otro producto.
+                    </button>
+                </h5>  
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Si todavía no despachamos tu compra, podés realizar una nueva seleccionando la opción de “Retirar por un local.” y en las notas decirnos qué querés “Unificar mi envío con la orden” y el número de orden de la compra con envío que realizaste anteriormente.</p>
+                    </div>
+                </div>
+            </div>   
+            <div class="accordion-item">
+                <h5 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                        ¿Tienen cuotas sin interés?
+                    </button>
+                </h5>  
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>La posibilidad de financiar tu pago sin intereses depende de la promoción que tenga Mercado Pago con el banco de tu tarjeta. Podés fijarte en este link: <a href="https://www.mercadopago.com.ar/cuotas">https://www.mercadopago.com.ar/cuotas</a></p>
+                    </div>
+                </div>
+            </div>   
+            <div class="accordion-item">
+                <h5 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+                        Compré o me regalaron un juego y lo quiero cambiar ¿Puedo?
+                    </button>
+                </h5>  
+                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>No hay problema siempre y cuando el juego todavía esté sellado.</p>
+                    </div>
+                </div>
+            </div>   
+            <div class="accordion-item">
+                <h5 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
+                        El producto que me llegó no es el que compré, me vino dañado o sin una pieza o pieza repetida.
+                    </button>
+                </h5>  
+                <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>Mandanos un mail a viciogaming@gmail.com y nos encargamos de resolverlo.</p>
+                    </div>
+                </div>
+            </div>   
         </div>
     </main>
     <footer>
-        <div class="newsletter-redes"> <!-- Inicio Newsletter + Redes -->
-            <div class="newsletter"> <!-- Inicio Newsletter -->
+        <div class="newsletter-redes container-fluid d-flex justify-content-between align-items-center flex-wrap"> <!-- Inicio Newsletter + Redes -->
+            <div class="newsletter d-flex align-items-center"> <!-- Inicio Newsletter -->
                 <span>Envio de Newsletter</span>
-                <input class="newsletter-text" type="text">
-                <input class="newsletter-submit" type="submit" value="SUSCRIBIRSE">
+                <div class="input-group">
+                    <input type="text" class="form-control"  aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn newsletter-submit" type="submit" id="button-addon2">SUSCRIBIRSE</button>
+                </div>
             </div> <!-- Fin Newsletter -->
-            <div class="redes"> <!-- Inicio Redes -->
+            <div class="redes d-flex"> <!-- Inicio Redes -->
                 <a href="https://www.facebook.com/" target="_blank">
                     <i class="fa-brands fa-facebook-square"></i>
                 </a>
@@ -129,12 +214,12 @@
                 </a>
             </div> <!-- Fin Redes -->
         </div> <!-- Fin Newsletter + Redes -->
-        <div class="footer-container-black"> <!-- Historia + Pagos + Envios + Contacto -->
-            <div class="historia"> <!-- Inicio Historia -->
+        <div class="footer-container-black container-fluid row d-flex justify-content-around  m-0"> <!-- Historia + Pagos + Envios + Contacto -->
+            <div class="historia col-lg-4 col-md-12 col-sm-12"> <!-- Inicio Historia -->
                 <h3>NUESTRA HISTORIA</h3>
                 <a href="./historia.html">Clickea aca y conocenos</a>
             </div> <!-- Fin Historia -->
-            <div class="pagos-envios"> <!-- Inicio Medios de pago + Medios de Envio -->
+            <div class="pagos-envios col-lg-4 col-md-12 col-sm-12"> <!-- Inicio Medios de pago + Medios de Envio -->
                 <div class="medios-de-pago"> <!-- Inicio Medios de pago -->
                     <h3>MEDIOS DE PAGO</h3>
                     <img src="../images/mediosdepago/visa.png" alt="Visa">
@@ -149,7 +234,7 @@
                     <img src="../images/mediosdeenvio/oca.png" alt="OCA">
                 </div> <!-- Fin Medios de envio -->
             </div> <!-- Fin Medios de pago + Medios de Envio -->
-            <div class="contacto"> <!-- Inicio Contacto -->
+            <div class="contacto col-lg-4 col-md-12 col-sm-12"> <!-- Inicio Contacto -->
                 <h3>CONTACTO</h3>
                 <ul>
                     <li>Whatsapp: +5491155223344</li>
@@ -159,5 +244,6 @@
             </div> <!-- Fin Contacto -->
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
