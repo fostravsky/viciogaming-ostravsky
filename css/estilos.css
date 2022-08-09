@@ -505,12 +505,12 @@ a {
 }
 
 .consolas-background {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/reparacionconsola.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/serviciotecnico/reparacionconsola.jpg);
     background-size: cover;
 }
 
 .joystick-background {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/reparacionjoystick.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/serviciotecnico/reparacionjoystick.jpg);
     background-size: cover;
 }
 
