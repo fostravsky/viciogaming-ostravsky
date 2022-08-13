@@ -1,0 +1,20 @@
+.form-login {
+    width: 50%;
+    margin: 2rem auto;
+
+    .btn--facebook {
+        background-color: $color-fb;
+        width: 100%;
+        color: $color-blanco;
+        margin-bottom: 1rem;
+
+        i {
+            font-size: 1.5rem;
+            padding-right: 1rem;
+        }
+
+        span {
+            font-size: 1.5rem;
+        } 
+    }
+}

@@ -1,0 +1,56 @@
+/**********  INICIO HEADER *********/
+
+.header--black {
+    background-color: $color-negro;
+    padding: 0.5rem;
+    
+    .logo {
+        width: 120px;
+        margin-left: 1rem;
+
+    }
+
+    .login-carrito {
+        margin-right: 1rem;
+        font-size: 1rem;    
+        
+        span { 
+            font-size: 1rem;
+        } 
+
+        i {
+            font-size: 1.5rem;
+            margin-left: 1rem;
+        }
+           
+    }
+}   
+
+
+
+.nav-purple-container {
+    background-color: $color-primario;
+    padding: 0.4rem;
+
+    .navbar-toggler {
+        border-color: $color-blanco;
+        
+        &:focus {
+            text-decoration: none;
+            outline: 0;
+            box-shadow: 0 0 0 0.15rem $color-blanco;
+    
+        }
+
+        .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }   
+    }
+
+    .nav-link {
+    font-weight: bold;
+    }                   
+    
+}
+
+/**********  FIN HEADER *********/

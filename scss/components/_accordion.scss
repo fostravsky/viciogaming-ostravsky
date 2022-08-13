@@ -1,0 +1,24 @@
+/**********  INICIO ACCORDION *********/
+
+.accordion {
+    margin: 2rem auto;
+
+    .accordion-button:not(.colapsed) {
+        background-color: $color-secundario;
+        color: $color-blanco;
+        box-shadow: none;
+
+        &::after {
+            filter: brightness(0%) invert(90%);
+        }
+    }
+
+    .accordion-body {
+        background-color: $color-primario;
+        color: $color-blanco;
+        text-align: justify;
+    }
+    
+}
+
+/**********  FIN ACCORDION *********/

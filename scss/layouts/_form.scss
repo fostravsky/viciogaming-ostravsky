@@ -1,0 +1,32 @@
+/**********  INICIO FORMS *********/
+
+.form-container {
+    padding: 2rem;
+    background-color: $color-secundario;
+
+    
+    input, textarea {
+        background-color: $color-secundario;
+        border: 0;
+        border-radius: 0;
+        border-bottom: 1px solid $color-blanco;
+        color: $color-blanco;
+
+        &:focus {
+            background-color: $color-secundario;
+            box-shadow: none;
+            color: $color-blanco;
+        }
+    }
+
+    label {
+        color: $color-blanco;
+    }
+
+    .form-select{
+        background-color: $color-secundario;
+        color: $color-blanco;
+    }
+}
+
+/**********  FIN FORMS *********/

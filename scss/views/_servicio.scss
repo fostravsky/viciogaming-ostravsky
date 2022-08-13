@@ -1,0 +1,41 @@
+.info-container-titulo {
+    background-color: $color-secundario;
+    text-align: center;
+    color: $color-blanco;   
+    margin: 0;
+    padding-top: 1rem;
+}
+
+.presupuesto {
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.service-container {
+    text-align: center;
+    border-radius: 10px;
+    color:  $color-blanco;
+    padding: 1rem;
+    margin: 1rem auto;  
+
+    h3 {
+        font-size: 2rem;
+    }
+    
+    li {
+        padding-top: 1.5rem;
+        list-style: none;
+    }
+}
+
+.consolas-background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/serviciotecnico/reparacionconsola.jpg);
+    background-size: cover;
+}
+
+.joystick-background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/serviciotecnico/reparacionjoystick.jpg);
+    background-size: cover;
+}

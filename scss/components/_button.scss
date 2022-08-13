@@ -1,0 +1,19 @@
+/**********  INICIO BUTTON *********/
+
+
+.submit {
+    color: white;
+    padding: 0.5rem;
+    display: inherit;
+    border: 2px solid $color-blanco;
+    font-size: 1rem;
+    background-color: $color-primario;
+    margin: 2rem auto;
+
+    &:hover {
+        color: $color-blanco;
+        background-color: $color-negro;
+    }
+}
+
+/**********  FIN BUTTON *********/

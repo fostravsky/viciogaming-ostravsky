@@ -1,0 +1,43 @@
+/**********  INICIO CARDS *********/
+
+.card {
+    margin: 1rem 0 3rem 1rem;
+    text-align: center;
+    border: none;
+    width: 15rem;
+
+    &:hover {
+        transform: scale(1.05,1.05);   
+        transition-duration: .8s;     
+    }
+
+    .card-body {
+        background-color: $color-gris;
+        border-radius: 0 0 15px 15px;
+
+        .submit {
+            margin: 1rem auto;
+        }       
+    }
+
+    .card-title {
+        color: #260f96;
+        font-weight: bolder;
+    }
+
+    .card-precio {
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    .card-cuotas {
+        font-size: 0.7rem;
+        font-weight: bold;
+
+        span {
+            color: $color-primario;
+        }
+    }
+}
+
+/**********  FIN CARDS *********/

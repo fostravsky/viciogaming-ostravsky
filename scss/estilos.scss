@@ -1,0 +1,23 @@
+@import "utilities/variables";
+
+@import "base/reset";
+@import "base/fonts";
+@import "base/config";
+
+@import "components/encabezado";
+@import "components/cards";
+@import "components/banner";
+@import "components/button";
+@import "components/accordion";
+
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/info";
+@import "layouts/form";
+
+@import "views/historia";
+@import "views/contacto";
+@import "views/login";
+@import "views/servicio";
+
+@import "mq/mediaqueries";

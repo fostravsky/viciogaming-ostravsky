@@ -1,0 +1,46 @@
+/**********  INICIO BANNER *********/
+
+.banner {
+    height: 150px;
+    padding-left: 15px;
+    background-size: cover;
+    background-position: center;
+
+    .titulo-banner {
+        font-size: 3rem;
+        color: white;
+        text-shadow:
+        0 0 1px $color-primario,
+        -1px -1px 0 $color-primario,  
+        1px -1px 0 $color-primario,
+        -1px 1px 0 $color-primario,
+        1px 1px 0 $color-primario;
+        -webkit-text-fill-color: $color-blanco;
+    }
+
+    &-faqs {
+        background-image: url(https://image.shutterstock.com/image-illustration/blue-question-mark-on-background-260nw-1174244842.jpg);
+    }
+    
+    &-contacto {
+        background-image: url(https://images.bluefin-mobile.com/1534326753/desktop/pages-top/47hero-contact.jpg);
+    }
+
+    &-login {
+        background-image: url(https://auditbots.com/gallery/04.33AMpassb-ghcc5fbb96088384e.jpg);
+    }
+
+    &-servicio {
+        background-image: url(https://diagnostika.com.ar/wp-content/uploads/2020/12/st.jpg);
+    }
+
+    &-historia {
+        background-image: url(https://partiudisneyparks.com/wp-content/uploads/2020/02/Game-Stop.jpg)
+    }
+}
+
+/**********  FIN BANNER *********/
+
+
+
+

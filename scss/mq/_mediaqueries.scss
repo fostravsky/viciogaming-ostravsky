@@ -1,0 +1,85 @@
+/**********  INICIO MQ *********/
+
+@media (min-width: 1024px) {
+    .nav-link:hover {
+        padding-bottom: 4px;
+        border-bottom: 3px solid $color-blanco;   
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .info__fa i {
+        font-size: 3rem;
+    }
+
+    .info__desc {
+        font-size: 0.7rem;
+
+        h2 {
+            font-size: 1rem;
+        }
+    }
+
+    .footer-container-black > div {
+        margin: 1rem auto;
+    }
+    
+}
+
+
+@media (max-width: 576px) {
+
+    .info {
+        flex-direction: column;
+        align-items: center;
+
+        i {
+            font-size: 3rem;
+        }
+    }
+
+    .form-login{
+        width: 100%;
+    }
+    
+    .footer-container-black {
+        div {
+        margin: 1rem auto;
+        }
+
+        .img {
+            margin: 1rem;
+        }
+    }
+
+    .newsletter {
+        flex-direction: column;
+        margin: 1rem auto;
+    }
+
+    .redes {
+        margin: 1rem auto;
+    }
+
+    .input-group {
+        padding-top: 1rem;
+    }
+
+    .banner {
+        height: 5rem;
+
+        .titulo-banner {
+            font-size: 2rem;
+        }
+    }
+
+    .historia-container {
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+/**********  FIN MQ *********/
