@@ -85,15 +85,15 @@ a {
     text-shadow: 0 0 1px #260f96, -1px -1px 0 #260f96, 1px -1px 0 #260f96, -1px 1px 0 #260f96, 1px 1px 0 #260f96;
     -webkit-text-fill-color: white; }
   .banner-faqs {
-    background-image: url(https://image.shutterstock.com/image-illustration/blue-question-mark-on-background-260nw-1174244842.jpg); }
+    background-image: url(../images/banners/banner-faqs-desktop.jpg); }
   .banner-contacto {
-    background-image: url(https://images.bluefin-mobile.com/1534326753/desktop/pages-top/47hero-contact.jpg); }
+    background-image: url(../images/banners/banner-contacto-desktop.jpg); }
   .banner-login {
-    background-image: url(https://auditbots.com/gallery/04.33AMpassb-ghcc5fbb96088384e.jpg); }
+    background-image: url(../images/banners/banner-login-desktop.jpg); }
   .banner-servicio {
-    background-image: url(https://diagnostika.com.ar/wp-content/uploads/2020/12/st.jpg); }
+    background-image: url(../images/banners/banner-servicio-desktop.jpg); }
   .banner-historia {
-    background-image: url(https://partiudisneyparks.com/wp-content/uploads/2020/02/Game-Stop.jpg); }
+    background-image: url(../images/banners/banner-historia-desktop.jpg); }
 
 /**********  FIN BANNER *********/
 /**********  INICIO BUTTON *********/
@@ -229,6 +229,9 @@ a {
 .form-container {
   padding: 2rem;
   background-color: #292926; }
+  .form-container .form-select, .form-container input:focus, .form-container textarea:focus {
+    background-color: #292926;
+    color: white; }
   .form-container input, .form-container textarea {
     background-color: #292926;
     border: 0;
@@ -236,13 +239,8 @@ a {
     border-bottom: 1px solid white;
     color: white; }
     .form-container input:focus, .form-container textarea:focus {
-      background-color: #292926;
-      box-shadow: none;
-      color: white; }
+      box-shadow: none; }
   .form-container label {
-    color: white; }
-  .form-container .form-select {
-    background-color: #292926;
     color: white; }
 
 /**********  FIN FORMS *********/
@@ -330,7 +328,17 @@ a {
     .info__desc h2 {
       font-size: 1rem; }
   .footer-container-black > div {
-    margin: 1rem auto; } }
+    margin: 1rem auto; }
+  .banner-faqs {
+    background-image: url(../images/banners/banner-faqs-tablet.jpg); }
+  .banner-contacto {
+    background-image: url(../images/banners/banner-contacto-tablet.jpg); }
+  .banner-login {
+    background-image: url(../images/banners/banner-login-tablet.jpg); }
+  .banner-servicio {
+    background-image: url(../images/banners/banner-servicio-tablet.jpg); }
+  .banner-historia {
+    background-image: url(../images/banners/banner-historia-tablet.jpg); } }
 
 @media (max-width: 576px) {
   .info {
@@ -353,6 +361,16 @@ a {
     padding-top: 1rem; }
   .banner {
     height: 5rem; }
+    .banner-faqs {
+      background-image: url(../images/banners/banner-faqs-mobile.jpg); }
+    .banner-contacto {
+      background-image: url(../images/banners/banner-contacto-mobile.jpg); }
+    .banner-login {
+      background-image: url(../images/banners/banner-login-mobile.jpg); }
+    .banner-servicio {
+      background-image: url(../images/banners/banner-servicio-mobile.jpg); }
+    .banner-historia {
+      background-image: url(../images/banners/banner-historia-mobile.jpg); }
     .banner .titulo-banner {
       font-size: 2rem; }
   .historia-container h2 {

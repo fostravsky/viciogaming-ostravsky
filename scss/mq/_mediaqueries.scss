@@ -25,6 +25,28 @@
     .footer-container-black > div {
         margin: 1rem auto;
     }
+
+    .banner {
+        &-faqs {
+            background-image: url(../images/banners/banner-faqs-tablet.jpg);
+        }
+        
+        &-contacto {
+            background-image: url(../images/banners/banner-contacto-tablet.jpg);
+        }
+    
+        &-login {
+            background-image: url(../images/banners/banner-login-tablet.jpg);
+        }
+    
+        &-servicio {
+            background-image: url(../images/banners/banner-servicio-tablet.jpg);
+        }
+            
+        &-historia {
+            background-image: url(../images/banners/banner-historia-tablet.jpg);
+        }    
+    }
     
 }
 
@@ -69,6 +91,26 @@
 
     .banner {
         height: 5rem;
+
+        &-faqs {
+            background-image: url(../images/banners/banner-faqs-mobile.jpg);
+        }
+        
+        &-contacto {
+            background-image: url(../images/banners/banner-contacto-mobile.jpg);
+        }
+    
+        &-login {
+            background-image: url(../images/banners/banner-login-mobile.jpg);
+        }
+    
+        &-servicio {
+            background-image: url(../images/banners/banner-servicio-mobile.jpg);
+        }
+            
+        &-historia {
+            background-image: url(../images/banners/banner-historia-mobile.jpg);
+        }
 
         .titulo-banner {
             font-size: 2rem;

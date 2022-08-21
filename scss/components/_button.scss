@@ -2,13 +2,13 @@
 
 
 .submit {
-    color: white;
-    padding: 0.5rem;
-    display: inherit;
-    border: 2px solid $color-blanco;
-    font-size: 1rem;
-    background-color: $color-primario;
-    margin: 2rem auto;
+    color: map-get($button, color);
+    padding: map-get($button, espacio);
+    display: map-get($button, display);
+    border: map-get($button, borde);
+    font-size: map-get($button, tFuente);
+    background-color: map-get($button, fondo);
+    margin: map-get($button, margen);
 
     &:hover {
         color: $color-blanco;

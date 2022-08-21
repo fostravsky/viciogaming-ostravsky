@@ -7,3 +7,12 @@ $color-fb: #3b5998;
 $color-tw: #00acee;
 $color-yt: #c4302b;
 
+$button: (
+    color: $color-blanco,
+    espacio: 0.5rem,
+    display: inherit,
+    borde: 2px solid $color-blanco,
+    tFuente: 1rem,
+    fondo: $color-primario,
+    margen: 2rem auto
+)

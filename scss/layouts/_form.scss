@@ -4,6 +4,10 @@
     padding: 2rem;
     background-color: $color-secundario;
 
+    .form-select{
+        background-color: $color-secundario;
+        color: $color-blanco;
+    }
     
     input, textarea {
         background-color: $color-secundario;
@@ -13,20 +17,15 @@
         color: $color-blanco;
 
         &:focus {
-            background-color: $color-secundario;
+            @extend .form-select;
             box-shadow: none;
-            color: $color-blanco;
         }
     }
 
     label {
         color: $color-blanco;
     }
-
-    .form-select{
-        background-color: $color-secundario;
-        color: $color-blanco;
-    }
+    
 }
 
 /**********  FIN FORMS *********/
