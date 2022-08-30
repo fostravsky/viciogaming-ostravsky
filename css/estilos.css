@@ -350,7 +350,8 @@ a {
     width: 100%; }
   .footer-container-black div {
     margin: 1rem auto; }
-  .footer-container-black .img {
+  .footer-container-black img {
+    width: 50px;
     margin: 1rem; }
   .newsletter {
     flex-direction: column;
