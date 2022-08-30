@@ -327,6 +327,8 @@ a {
     font-size: 0.7rem; }
     .info__desc h2 {
       font-size: 1rem; }
+  .card {
+    width: 18rem; }
   .footer-container-black > div {
     margin: 1rem auto; }
   .banner-faqs {
